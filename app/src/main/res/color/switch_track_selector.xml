@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- когда выключено -->
+    <item android:color="@color/switch_track_color" android:state_checked="false" />
+    <!-- когда включено -->
+    <item android:color="#D0D0D0" android:state_checked="true" />
+</selector>
