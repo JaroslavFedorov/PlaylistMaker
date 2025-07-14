@@ -1,9 +1,18 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.PlaylistMaker" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Base.Theme.PlaylistMaker" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorBackground">@color/colorBackground</item>
+        <item name="colorPrimary">@color/main_background</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Кастомные цвета для кнопок -->
+        <item name="colorButtonBackground">@color/button_background</item>
+        <item name="colorButtonText">@color/button_text</item>
+
+        <!-- Для настройки тёмного/светлого экрана настроек -->
+        <item name="colorSettingsBackground">@color/settings_background_light</item>
+        <item name="colorSettingsText">@color/settings_text_light</item>
     </style>
 
     <style name="Theme.PlaylistMaker" parent="Base.Theme.PlaylistMaker" />
 </resources>
+

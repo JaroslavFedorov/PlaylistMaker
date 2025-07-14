@@ -1,9 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorBackground">#FFFFFF</color>
+    <color name="main_background">#3772E7</color>
+
+    <color name="button_background">#FFFFFF</color>
+    <color name="button_text">#1A1B22</color>
+
+    <color name="switch_thumb_color">#3772E7</color>
+    <color name="switch_track_color">#AEAFB4</color>
+
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
-    <color name="main_background">#4361EE</color>
-    <color name="switch_thumb_color">#3772E7</color> <!-- включено -->
-    <color name="switch_track_color">#AEAFB4</color> <!-- выключено -->
+    <color name="title_text">#FFFFFF</color>
+
+    <!-- Добавляем отсутствующие -->
+    <color name="settings_background_light">#FFFFFF</color>
+    <color name="settings_text_light">#1A1B22</color>
+
+    <color name="settings_background_dark">#1A1B22</color>
+    <color name="settings_text_dark">#FFFFFF</color>
+
+    <color name="gray">#808080</color>
+    <color name="search_field_background">#FFFFFF</color>
+    <color name="navigation_icon_color">#000000</color>
 </resources>

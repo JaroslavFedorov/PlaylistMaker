@@ -1,0 +1,7 @@
+<resources>
+    <attr name="colorButtonBackground" format="color" />
+    <attr name="colorButtonText" format="color" />
+    <attr name="colorBackground" format="color" />
+    <attr name="colorSettingsBackground" format="reference|color" />
+    <attr name="colorSettingsText" format="reference|color" />
+</resources>

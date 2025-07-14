@@ -3,10 +3,14 @@ package com.practicum.playlistmaker
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import com.google.android.material.button.MaterialButton
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        // Устанавливаем ночной режим по умолчанию (следовать системной теме)
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 

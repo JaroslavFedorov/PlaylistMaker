@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
@@ -9,7 +8,6 @@
     android:background="@color/main_background"
     android:gravity="center">
 
-    <!-- Заголовок -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -19,60 +17,31 @@
         android:layout_marginBottom="@dimen/title_margin_bottom"
         android:layout_gravity="center_horizontal" />
 
-    <!-- Кнопка Поиск -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonSearch"
-        style="@style/Widget.MaterialComponents.Button"
+        style="@style/MainScreenButton"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:backgroundTint="@color/white"
+        android:layout_height="wrap_content"
         android:text="@string/search"
-        android:textColor="@color/black"
-        android:layout_marginStart="@dimen/button_margin_start"
-        android:layout_marginEnd="@dimen/button_margin_start"
-        android:layout_marginBottom="@dimen/button_spacing"
-        app:icon="@drawable/ic_search"
-        app:iconTint="@color/black"
-        app:iconPadding="@dimen/button_icon_padding"
-        app:cornerRadius="@dimen/button_corner_radius"
-        app:iconGravity="textStart" />
+        android:contentDescription="@string/search"
+        app:icon="@drawable/ic_search" />
 
-    <!-- Кнопка Медиатека -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonLibrary"
-        style="@style/Widget.MaterialComponents.Button"
+        style="@style/MainScreenButton"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:backgroundTint="@color/white"
-        android:text="@string/library"
-        android:textColor="@color/black"
-        android:layout_marginStart="@dimen/button_margin_start"
-        android:layout_marginEnd="@dimen/button_margin_start"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/button_spacing"
-        app:icon="@drawable/ic_folder"
-        app:iconTint="@color/black"
-        app:iconPadding="@dimen/button_icon_padding"
-        app:cornerRadius="@dimen/button_corner_radius"
-        app:iconGravity="textStart" />
+        android:text="@string/library"
+        android:contentDescription="@string/library"
+        app:icon="@drawable/ic_folder" />
 
-    <!-- Кнопка Настройки -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonSettings"
-        style="@style/Widget.MaterialComponents.Button"
+        style="@style/MainScreenButton"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:backgroundTint="@color/white"
+        android:layout_height="wrap_content"
         android:text="@string/settings"
-        android:textColor="@color/black"
-        android:layout_marginStart="@dimen/button_margin_start"
-        android:layout_marginEnd="@dimen/button_margin_start"
-        app:icon="@drawable/ic_settings"
-        app:iconTint="@color/black"
-        app:iconPadding="@dimen/button_icon_padding"
-        app:cornerRadius="@dimen/button_corner_radius"
-        app:iconGravity="textStart" />
-
+        android:contentDescription="@string/settings"
+        app:icon="@drawable/ic_settings" />
 </LinearLayout>
