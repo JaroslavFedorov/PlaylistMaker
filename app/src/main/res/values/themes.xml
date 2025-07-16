@@ -1,5 +1,8 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
+
+    <!-- Главная тема приложения -->
     <style name="Base.Theme.PlaylistMaker" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Основные цвета -->
         <item name="colorBackground">@color/colorBackground</item>
         <item name="colorPrimary">@color/main_background</item>
         <item name="colorOnPrimary">@color/white</item>
@@ -8,11 +11,31 @@
         <item name="colorButtonBackground">@color/button_background</item>
         <item name="colorButtonText">@color/button_text</item>
 
-        <!-- Для настройки тёмного/светлого экрана настроек -->
+        <!-- Для экрана настроек -->
         <item name="colorSettingsBackground">@color/settings_background_light</item>
         <item name="colorSettingsText">@color/settings_text_light</item>
+
+        <!-- Стилизация Toolbar -->
+        <item name="toolbarStyle">@style/Widget.PlaylistMaker.Toolbar</item>
     </style>
 
+    <!-- Основная тема приложения -->
     <style name="Theme.PlaylistMaker" parent="Base.Theme.PlaylistMaker" />
-</resources>
 
+    <!-- Стиль для Toolbar -->
+    <style name="Widget.PlaylistMaker.Toolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <!-- Высота тулбара по стандарту Material -->
+        <item name="android:layout_height">56dp</item>
+
+        <!-- Цвета текста в тулбаре -->
+        <item name="titleTextColor">@color/black</item>
+        <item name="subtitleTextColor">@color/black</item>
+
+        <!-- Цвет фона тулбара -->
+        <item name="android:background">@color/colorBackground</item>
+
+        <!-- Цвет иконки назад (стрелки) -->
+        <item name="navigationIconTint">@color/black</item>
+    </style>
+
+</resources>

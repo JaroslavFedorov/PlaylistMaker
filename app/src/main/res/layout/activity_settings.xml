@@ -12,16 +12,24 @@
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/settings_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
+        android:layout_height="72dp"
         android:background="?attr/colorSettingsBackground"
         app:title="@string/settings_title"
         app:titleTextColor="?attr/colorSettingsText"
         app:navigationIcon="@drawable/ic_arrow_back"
+        app:contentInsetStartWithNavigation="16dp"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <!-- Отступ между тулбаром и первым пунктом -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="36dp" />
 
     <LinearLayout
         android:id="@+id/dark_theme_item"
-        style="@style/SettingsMenuItemNonClickable">
+        style="@style/SettingsMenuItemNonClickable"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
 
         <TextView
             style="@style/SettingsMenuItemText"
@@ -37,9 +45,12 @@
             app:trackTint="@color/switch_track_selector" />
     </LinearLayout>
 
+    <!-- остальные пункты меню -->
     <LinearLayout
         android:id="@+id/share_item"
-        style="@style/SettingsMenuItem">
+        style="@style/SettingsMenuItem"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
 
         <TextView
             style="@style/SettingsMenuItemText"
@@ -54,7 +65,9 @@
 
     <LinearLayout
         android:id="@+id/support_item"
-        style="@style/SettingsMenuItem">
+        style="@style/SettingsMenuItem"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
 
         <TextView
             style="@style/SettingsMenuItemText"
@@ -69,7 +82,10 @@
 
     <LinearLayout
         android:id="@+id/agreement_item"
-        style="@style/SettingsMenuItem">
+        style="@style/SettingsMenuItem"
+        android:layout_height="55dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
 
         <TextView
             style="@style/SettingsMenuItemText"
@@ -78,8 +94,9 @@
 
         <ImageView
             style="@style/SettingsMenuItemIcon"
-            android:src="@drawable/ic_arrow_right"
-            android:contentDescription="@string/agreement_icon_desc" />
+            android:contentDescription="@string/agreement_icon_desc"
+            android:src="@drawable/ic_arrow_right" />
     </LinearLayout>
 
 </LinearLayout>
+

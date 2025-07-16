@@ -1,7 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <style name="Theme.PlaylistMaker" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+    <!-- Базовая тема с поддержкой ночного режима -->
+    <style name="Base.Theme.PlaylistMaker" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Фон -->
-        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="colorBackground">@color/colorBackground</item>
 
         <!-- Основные цвета -->
         <item name="colorPrimary">@color/main_background</item>
@@ -11,8 +13,25 @@
         <item name="colorButtonBackground">@color/button_background</item>
         <item name="colorButtonText">@color/button_text</item>
 
-        <!-- Цвета для настроек (тёмная тема) -->
+        <!-- Цвета для настроек -->
         <item name="colorSettingsBackground">@color/settings_background_dark</item>
         <item name="colorSettingsText">@color/settings_text_dark</item>
+
+        <!-- Стилизация Toolbar -->
+        <item name="toolbarStyle">@style/Widget.PlaylistMaker.Toolbar</item>
     </style>
+
+    <!-- Основная тема -->
+    <style name="Theme.PlaylistMaker" parent="Base.Theme.PlaylistMaker" />
+
+    <!-- Стиль для Toolbar -->
+    <style name="Widget.PlaylistMaker.Toolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="android:layout_height">56dp</item>
+        <item name="titleTextColor">@color/white</item>
+        <item name="subtitleTextColor">@color/white</item>
+        <item name="android:background">@color/colorBackground</item>
+        <item name="navigationIconTint">@color/white</item>
+    </style>
+
 </resources>
+

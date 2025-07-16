@@ -4,24 +4,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="@dimen/default_padding"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
     android:background="@color/main_background"
-    android:gravity="center">
+    android:gravity="start">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/app_name"
-        android:textSize="@dimen/title_text_size"
+        android:textSize="24sp"
         android:textColor="@color/white"
-        android:layout_marginBottom="@dimen/title_margin_bottom"
-        android:layout_gravity="center_horizontal" />
+        android:layout_marginBottom="24dp"
+        android:layout_gravity="start"
+        android:paddingHorizontal="16dp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonSearch"
         style="@style/MainScreenButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
         android:text="@string/search"
         android:contentDescription="@string/search"
         app:icon="@drawable/ic_search" />
@@ -31,7 +36,7 @@
         style="@style/MainScreenButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/button_spacing"
+        android:layout_marginBottom="16dp"
         android:text="@string/library"
         android:contentDescription="@string/library"
         app:icon="@drawable/ic_folder" />
@@ -44,4 +49,5 @@
         android:text="@string/settings"
         android:contentDescription="@string/settings"
         app:icon="@drawable/ic_settings" />
+
 </LinearLayout>
