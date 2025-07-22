@@ -12,18 +12,15 @@
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/settings_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="72dp"
+        android:layout_height="wrap_content"
         android:background="?attr/colorSettingsBackground"
+        android:elevation="0dp"
+        app:elevation="0dp"
         app:title="@string/settings_title"
         app:titleTextColor="?attr/colorSettingsText"
         app:navigationIcon="@drawable/ic_arrow_back"
         app:contentInsetStartWithNavigation="16dp"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
-
-    <!-- Отступ между тулбаром и первым пунктом -->
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="36dp" />
 
     <LinearLayout
         android:id="@+id/dark_theme_item"
@@ -45,7 +42,6 @@
             app:trackTint="@color/switch_track_selector" />
     </LinearLayout>
 
-    <!-- остальные пункты меню -->
     <LinearLayout
         android:id="@+id/share_item"
         style="@style/SettingsMenuItem"
