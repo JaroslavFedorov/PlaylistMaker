@@ -40,9 +40,9 @@
             android:paddingStart="48dp"
             android:paddingEnd="48dp"
             android:textColor="?attr/colorSettingsText"
-            android:textColorHint="#7F7F7F"
+            android:textColorHint="#B3B3B3"
             android:drawableStart="@drawable/ic_search"
-            android:drawableTint="#7F7F7F"
+            android:drawableTint="#B3B3B3"
             android:drawablePadding="12dp" />
 
         <ImageView

@@ -28,6 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:text="@string/search"
+        android:textAllCaps="false"
         android:contentDescription="@string/search"
         app:icon="@drawable/ic_search" />
 
@@ -38,6 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:text="@string/library"
+        android:textAllCaps="false"
         android:contentDescription="@string/library"
         app:icon="@drawable/ic_folder" />
 
@@ -47,6 +49,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/settings"
+        android:textAllCaps="false"
         android:contentDescription="@string/settings"
         app:icon="@drawable/ic_settings" />
 

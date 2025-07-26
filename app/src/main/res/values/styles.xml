@@ -17,11 +17,10 @@
         <item name="android:elevation">0dp</item>
         <item name="android:stateListAnimator">@null</item>
 
-        <!-- Шрифтовые атрибуты -->
-        <item name="android:textSize">18sp</item>
-        <item name="android:fontFamily">@font/ys_display_bold</item>
-        <item name="android:textAllCaps">true</item>
-        <item name="android:textStyle">bold</item>
+        <!-- Шрифтовые атрибуты по макету -->
+        <item name="android:textSize">17sp</item> <!-- 22px -->
+        <item name="android:fontFamily">@font/ys_display_medium</item>
+        <item name="android:textAllCaps">false</item>
         <item name="android:letterSpacing">0.05</item>
         <item name="android:lineHeight">24sp</item>
     </style>
