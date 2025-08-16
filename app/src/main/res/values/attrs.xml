@@ -4,4 +4,6 @@
     <attr name="colorBackground" format="color" />
     <attr name="colorSettingsBackground" format="reference|color" />
     <attr name="colorSettingsText" format="reference|color" />
+    <attr name="colorSettingsIcon" format="color" />
+
 </resources>

@@ -2,20 +2,23 @@
 
     <!-- Базовая тема с поддержкой ночного режима -->
     <style name="Base.Theme.PlaylistMaker" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <!-- Фон -->
-        <item name="colorBackground">@color/colorBackground</item>
+        <!-- Цвет фона -->
+        <item name="colorBackground">@color/colorBackground</item> <!-- #1A1B22 -->
 
         <!-- Основные цвета -->
-        <item name="colorPrimary">@color/main_background</item>
-        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimary">@color/main_background</item> <!-- #1A1B22 -->
+        <item name="colorOnPrimary">@color/white</item>         <!-- #FFFFFF -->
 
-        <!-- Кнопки -->
-        <item name="colorButtonBackground">@color/button_background</item>
-        <item name="colorButtonText">@color/button_text</item>
+        <!-- Цвета кнопок -->
+        <item name="colorButtonBackground">@color/button_background</item> <!-- #FFFFFF -->
+        <item name="colorButtonText">@color/button_text</item>             <!-- #1A1B22 -->
 
-        <!-- Цвета для настроек -->
-        <item name="colorSettingsBackground">@color/settings_background_dark</item>
-        <item name="colorSettingsText">@color/settings_text_dark</item>
+        <!-- Цвета для экрана настроек -->
+        <item name="colorSettingsBackground">@color/settings_background_dark</item> <!-- #1A1B22 -->
+        <item name="colorSettingsText">@color/settings_text_dark</item>             <!-- #FFFFFF -->
+
+        <!-- Цвет иконок в настройках -->
+        <item name="colorSettingsIcon">@color/colorSettingsIcon</item>
 
         <!-- Стилизация Toolbar -->
         <item name="toolbarStyle">@style/Widget.PlaylistMaker.Toolbar</item>
@@ -27,10 +30,10 @@
     <!-- Стиль для Toolbar -->
     <style name="Widget.PlaylistMaker.Toolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
         <item name="android:layout_height">56dp</item>
-        <item name="titleTextColor">@color/white</item>
-        <item name="subtitleTextColor">@color/white</item>
-        <item name="android:background">@color/colorBackground</item>
-        <item name="navigationIconTint">@color/white</item>
+        <item name="titleTextColor">@color/white</item>       <!-- белый текст -->
+        <item name="subtitleTextColor">@color/white</item>    <!-- белый подзаголовок -->
+        <item name="android:background">@color/colorBackground</item>  <!-- #1A1B22 -->
+        <item name="navigationIconTint">@color/white</item>   <!-- цвет иконки назад -->
     </style>
 
 </resources>

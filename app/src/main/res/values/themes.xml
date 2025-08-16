@@ -6,6 +6,7 @@
         <item name="colorBackground">@color/colorBackground</item>
         <item name="colorPrimary">@color/main_background</item>
         <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSettingsIcon">@color/colorSettingsIcon</item>
 
         <!-- Кастомные цвета для кнопок -->
         <item name="colorButtonBackground">@color/button_background</item>
