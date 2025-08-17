@@ -2,13 +2,13 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="?attr/colorSettingsBackground"
     tools:context=".SettingsActivity">
 
+    <!-- Toolbar -->
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/settings_toolbar"
         android:layout_width="match_parent"
@@ -22,13 +22,15 @@
         app:contentInsetStartWithNavigation="16dp"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
+    <!-- Первый пункт: Темная тема -->
     <LinearLayout
         android:id="@+id/dark_theme_item"
         style="@style/SettingsMenuItemNonClickable"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
+        android:gravity="center_vertical"
         android:layout_marginTop="24dp">
 
         <TextView
@@ -45,13 +47,16 @@
             app:trackTint="@color/switch_track_selector" />
     </LinearLayout>
 
+    <!-- Пункт "Поделиться приложением" -->
     <LinearLayout
         android:id="@+id/share_item"
         style="@style/SettingsMenuItem"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         android:paddingStart="16dp"
-        android:paddingEnd="16dp">
+        android:paddingEnd="16dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="21dp">
 
         <TextView
             style="@style/SettingsMenuItemText"
@@ -65,13 +70,16 @@
             app:tint="?attr/colorSettingsIcon" />
     </LinearLayout>
 
+    <!-- Пункт "Написать в поддержку" -->
     <LinearLayout
         android:id="@+id/support_item"
         style="@style/SettingsMenuItem"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         android:paddingStart="16dp"
-        android:paddingEnd="16dp">
+        android:paddingEnd="16dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="21dp">
 
         <TextView
             style="@style/SettingsMenuItemText"
@@ -85,13 +93,16 @@
             app:tint="?attr/colorSettingsIcon" />
     </LinearLayout>
 
+    <!-- Пункт "Лицензионное соглашение" -->
     <LinearLayout
         android:id="@+id/agreement_item"
         style="@style/SettingsMenuItem"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:paddingStart="16dp"
-        android:paddingEnd="16dp">
+        android:paddingEnd="16dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="21dp">
 
         <TextView
             style="@style/SettingsMenuItemText"
@@ -100,9 +111,10 @@
 
         <ImageView
             style="@style/SettingsMenuItemIcon"
-            android:contentDescription="@string/agreement_icon_desc"
             android:src="@drawable/ic_arrow_right"
+            android:contentDescription="@string/agreement_icon_desc"
             app:tint="?attr/colorSettingsIcon" />
     </LinearLayout>
 
 </LinearLayout>
+

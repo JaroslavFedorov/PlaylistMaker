@@ -27,5 +27,5 @@
     <color name="search_hint_text">#AEAFB4</color>        <!-- цвет подсказки в поиске для дневной темы -->
     <color name="search_input_text">#AEAFB4</color>       <!-- цвет вводимого текста -->
     <color name="search_icon_tint">#AEAFB4</color>
-
+    <color name="colorSettingsText">#AEAFB4</color>
 </resources>
