@@ -5,5 +5,11 @@
     <attr name="colorSettingsBackground" format="reference|color" />
     <attr name="colorSettingsText" format="reference|color" />
     <attr name="colorSettingsIcon" format="color" />
+    <attr name="colorSearchInputText" format="color" />
+    <attr name="colorSearchHintText" format="color" />
+    <attr name="colorSearchIconTint" format="color" />
 
+
+    <!-- Атрибут для иконки навигации -->
+    <attr name="colorNavigationIcon" format="color" />
 </resources>

@@ -26,18 +26,31 @@ class SearchActivity : AppCompatActivity() {
         clearButton = findViewById(R.id.clear_search_button)
         toolbar = findViewById(R.id.search_toolbar)
 
-        // Кнопка "назад"
+        // Устанавливаем Toolbar как ActionBar
+        setSupportActionBar(toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowHomeEnabled(true)
+
+        // Программно устанавливаем цвет стрелки назад
+        toolbar.navigationIcon?.setTint(
+            resources.getColor(R.color.colorNavigationIcon, theme)
+        )
+
+        // Клик по стрелке назад
         toolbar.setNavigationOnClickListener {
             finish()
         }
 
+        // Скрываем кнопку очистки по умолчанию
         clearButton.visibility = View.GONE
 
+        // Отслеживаем изменения текста в поле поиска
         searchEditText.doOnTextChanged { text, _, _, _ ->
             currentSearchText = text.toString()
             clearButton.visibility = if (text.isNullOrEmpty()) View.GONE else View.VISIBLE
         }
 
+        // Обработка клика по кнопке очистки
         clearButton.setOnClickListener {
             searchEditText.text.clear()
             clearButton.visibility = View.GONE
@@ -65,3 +78,4 @@ class SearchActivity : AppCompatActivity() {
         imm.hideSoftInputFromWindow(searchEditText.windowToken, 0)
     }
 }
+
