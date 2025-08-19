@@ -18,7 +18,7 @@
     <color name="colorSettingsText">#AEAFB4</color>
     <!-- Шрифтовые атрибуты -->
 
-    <color name="search_hint_text">#818C99</color>
+    <color name="search_hint_text">#1A1B22</color>
     <color name="search_input_text">#1A1B22</color>
     <color name="search_icon_tint">#1A1B22</color>
     <color name="search_field_background">#FFFFFF</color>

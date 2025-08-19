@@ -28,11 +28,13 @@
         android:id="@+id/dark_theme_item"
         style="@style/SettingsMenuItemNonClickable"
         android:layout_width="match_parent"
-        android:layout_height="55dp"
+        android:layout_height="wrap_content"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
         android:gravity="center_vertical"
-        android:layout_marginTop="24dp">
+        android:layout_marginTop="24dp"
+        android:paddingTop="21dp"
+        android:paddingBottom="21dp">
 
         <TextView
             style="@style/SettingsMenuItemText"
@@ -53,11 +55,12 @@
         android:id="@+id/share_item"
         style="@style/SettingsMenuItem"
         android:layout_width="match_parent"
-        android:layout_height="55dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
-        android:gravity="center_vertical"
-        android:layout_marginTop="21dp">
+        android:paddingTop="21dp"
+        android:paddingBottom="21dp">
 
         <TextView
             style="@style/SettingsMenuItemText"
@@ -66,8 +69,8 @@
 
         <ImageView
             style="@style/SettingsMenuItemIcon"
-            android:src="@drawable/ic_share"
             android:contentDescription="@string/share_icon_desc"
+            android:src="@drawable/ic_share"
             app:tint="?attr/colorSettingsIcon" />
     </LinearLayout>
 
@@ -76,11 +79,12 @@
         android:id="@+id/support_item"
         style="@style/SettingsMenuItem"
         android:layout_width="match_parent"
-        android:layout_height="55dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
-        android:gravity="center_vertical"
-        android:layout_marginTop="21dp">
+        android:paddingTop="21dp"
+        android:paddingBottom="21dp">
 
         <TextView
             style="@style/SettingsMenuItemText"
@@ -89,8 +93,8 @@
 
         <ImageView
             style="@style/SettingsMenuItemIcon"
-            android:src="@drawable/ic_support"
             android:contentDescription="@string/support_icon_desc"
+            android:src="@drawable/ic_support"
             app:tint="?attr/colorSettingsIcon" />
     </LinearLayout>
 
@@ -99,11 +103,12 @@
         android:id="@+id/agreement_item"
         style="@style/SettingsMenuItem"
         android:layout_width="match_parent"
-        android:layout_height="55dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
-        android:gravity="center_vertical"
-        android:layout_marginTop="21dp">
+        android:paddingTop="21dp"
+        android:paddingBottom="21dp">
 
         <TextView
             style="@style/SettingsMenuItemText"
@@ -112,11 +117,10 @@
 
         <ImageView
             style="@style/SettingsMenuItemIcon"
-            android:src="@drawable/ic_arrow_right"
             android:contentDescription="@string/agreement_icon_desc"
+            android:src="@drawable/ic_arrow_right"
             app:tint="?attr/colorSettingsIcon" />
     </LinearLayout>
 
 </LinearLayout>
-
 
