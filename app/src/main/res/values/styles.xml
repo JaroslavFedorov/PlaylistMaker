@@ -35,7 +35,7 @@
         <item name="android:clickable">true</item>
         <item name="android:focusable">true</item>
         <item name="android:background">?attr/selectableItemBackground</item>
-        <item name="android:layout_marginBottom">16dp</item>
+        <!-- marginBottom убран -->
     </style>
 
     <style name="SettingsMenuItemNonClickable">
@@ -45,7 +45,7 @@
         <item name="android:gravity">center_vertical</item>
         <item name="android:paddingStart">16dp</item>
         <item name="android:paddingEnd">16dp</item>
-        <item name="android:layout_marginBottom">16dp</item>
+        <!-- marginBottom убран -->
     </style>
 
     <style name="SettingsMenuItemText">
