@@ -1,10 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/colorSettingsBackground"
     tools:context=".SearchActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Toolbar без тени -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/search_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorSettingsBackground"
+        android:elevation="0dp"
+        app:elevation="0dp"
+        app:title="@string/search"
+        app:titleTextColor="?attr/colorSettingsText"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:navigationIconTint="?attr/colorNavigationIcon"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <!-- Поле поиска с кнопкой очистки -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/search_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:hint="Поиск"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+            android:autofillHints="search"
+            android:background="@drawable/search_edit_background"
+            android:paddingStart="16dp"
+            android:paddingEnd="48dp"
+            android:textColor="?attr/colorSearchInputText"
+            android:textColorHint="?attr/colorSearchHintText"
+            android:drawableStart="@drawable/ic_search"
+            android:drawableTint="?attr/colorSearchIconTint"
+            android:drawablePadding="12dp" />
+
+        <ImageView
+            android:id="@+id/clear_search_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_clear"
+            android:visibility="gone"
+            android:contentDescription="@string/clear_icon_desc"
+            app:tint="?attr/colorSearchInputText" />
+    </FrameLayout>
+
+</LinearLayout>

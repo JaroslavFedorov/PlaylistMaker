@@ -1,9 +1,42 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.PlaylistMaker" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+<resources>
+
+    <!-- Базовая тема приложения -->
+    <style name="Base.Theme.PlaylistMaker" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Основные цвета -->
+        <item name="colorBackground">@color/colorBackground</item>
+        <item name="colorPrimary">@color/main_background</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSettingsIcon">@color/colorSettingsIcon</item>
+
+        <!-- Кастомные цвета для кнопок -->
+        <item name="colorButtonBackground">@color/button_background</item>
+        <item name="colorButtonText">@color/button_text</item>
+
+        <!-- Для экрана настроек -->
+        <item name="colorSettingsBackground">@color/settings_background_light</item>
+        <item name="colorSettingsText">@color/settings_text_light</item>
+
+        <!-- Атрибуты для поля поиска -->
+        <item name="colorSearchInputText">@color/search_input_text</item>
+        <item name="colorSearchHintText">@color/search_hint_text</item>
+        <item name="colorSearchIconTint">@color/search_icon_tint</item>
+        <item name="colorNavigationIcon">@color/white</item>
+
+        <!-- Стилизация Toolbar -->
+        <item name="toolbarStyle">@style/Widget.PlaylistMaker.Toolbar</item>
     </style>
 
+    <!-- Основная тема приложения -->
     <style name="Theme.PlaylistMaker" parent="Base.Theme.PlaylistMaker" />
+
+    <!-- Стиль для Toolbar -->
+    <style name="Widget.PlaylistMaker.Toolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="android:layout_height">56dp</item>
+        <item name="titleTextColor">@color/black</item>
+        <item name="subtitleTextColor">@color/black</item>
+        <item name="android:background">@color/colorBackground</item>
+        <item name="navigationIconTint">@color/black</item>
+
+    </style>
+
 </resources>

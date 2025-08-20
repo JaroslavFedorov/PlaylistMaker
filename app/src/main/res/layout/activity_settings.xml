@@ -6,37 +6,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/white"
+    android:background="?attr/colorSettingsBackground"
     tools:context=".SettingsActivity">
 
     <!-- Toolbar -->
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/settings_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorSettingsBackground"
+        android:elevation="0dp"
+        app:elevation="0dp"
         app:title="@string/settings_title"
-        app:titleTextColor="@color/black"
+        app:titleTextColor="?attr/colorSettingsText"
         app:navigationIcon="@drawable/ic_arrow_back"
+        app:contentInsetStartWithNavigation="16dp"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
-    <!-- Переключатель Темной темы -->
+    <!-- Первый пункт: Темная тема -->
     <LinearLayout
         android:id="@+id/dark_theme_item"
+        style="@style/SettingsMenuItemNonClickable"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
+        android:layout_height="wrap_content"
         android:paddingStart="16dp"
-        android:paddingEnd="16dp">
+        android:paddingEnd="16dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="24dp">
 
         <TextView
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
+            style="@style/SettingsMenuItemText"
             android:text="@string/dark_theme"
-            android:textSize="16sp"
-            android:textColor="@color/black"
+            android:paddingTop="21dp"
+            android:paddingBottom="21dp"
+            android:textColor="?attr/colorSettingsText"
             android:labelFor="@id/switch_dark_theme" />
 
         <com.google.android.material.switchmaterial.SwitchMaterial
@@ -47,91 +50,78 @@
             app:trackTint="@color/switch_track_selector" />
     </LinearLayout>
 
-    <!-- Поделиться приложением -->
+    <!-- Пункт "Поделиться приложением" -->
     <LinearLayout
         android:id="@+id/share_item"
+        style="@style/SettingsMenuItem"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:orientation="horizontal"
+        android:layout_height="wrap_content"
         android:gravity="center_vertical"
         android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:background="?attr/selectableItemBackground">
+        android:paddingEnd="16dp">
 
         <TextView
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
+            style="@style/SettingsMenuItemText"
             android:text="@string/share_app"
-            android:textSize="16sp"
-            android:textColor="@color/black" />
+            android:paddingTop="21dp"
+            android:paddingBottom="21dp"
+            android:textColor="?attr/colorSettingsText" />
 
         <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/ic_share"
+            style="@style/SettingsMenuItemIcon"
             android:contentDescription="@string/share_icon_desc"
-            app:tint="@color/black" />
+            android:src="@drawable/ic_share"
+            app:tint="?attr/colorSettingsIcon" />
     </LinearLayout>
 
-    <!-- Написать в поддержку -->
+    <!-- Пункт "Написать в поддержку" -->
     <LinearLayout
         android:id="@+id/support_item"
+        style="@style/SettingsMenuItem"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:orientation="horizontal"
+        android:layout_height="wrap_content"
         android:gravity="center_vertical"
         android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:background="?attr/selectableItemBackground">
+        android:paddingEnd="16dp">
 
         <TextView
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
+            style="@style/SettingsMenuItemText"
             android:text="@string/support"
-            android:textSize="16sp"
-            android:textColor="@color/black" />
+            android:paddingTop="21dp"
+            android:paddingBottom="21dp"
+            android:textColor="?attr/colorSettingsText" />
 
         <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/ic_support"
+            style="@style/SettingsMenuItemIcon"
             android:contentDescription="@string/support_icon_desc"
-            app:tint="@color/black" />
+            android:src="@drawable/ic_support"
+            app:tint="?attr/colorSettingsIcon" />
     </LinearLayout>
 
-    <!-- Пользовательское соглашение -->
+    <!-- Пункт "Лицензионное соглашение" -->
     <LinearLayout
         android:id="@+id/agreement_item"
+        style="@style/SettingsMenuItem"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:orientation="horizontal"
+        android:layout_height="wrap_content"
         android:gravity="center_vertical"
         android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:background="?attr/selectableItemBackground">
+        android:paddingEnd="16dp">
 
         <TextView
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
+            style="@style/SettingsMenuItemText"
             android:text="@string/agreement"
-            android:textSize="16sp"
-            android:textColor="@color/black" />
+            android:paddingTop="21dp"
+            android:paddingBottom="21dp"
+            android:textColor="?attr/colorSettingsText" />
 
         <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/ic_arrow_right"
+            style="@style/SettingsMenuItemIcon"
             android:contentDescription="@string/agreement_icon_desc"
-            app:tint="@color/black" />
+            android:src="@drawable/ic_arrow_right"
+            app:tint="?attr/colorSettingsIcon" />
     </LinearLayout>
 
 </LinearLayout>
+
+
